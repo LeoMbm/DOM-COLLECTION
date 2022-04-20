@@ -1,3 +1,4 @@
+let realCard = document.querySelector('.card');
 let collection = [{
 
     
@@ -136,6 +137,8 @@ let collection = [{
 ]
 
 for (const item of collection){
-    console.log(item)
+
+    console.log(item.title)
     
 }
+
