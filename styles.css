@@ -31,26 +31,23 @@ header h1{
 }
 
 
-article{
+section{
 
     width: auto;
     height: 100vh;
 }
 
 .container {  
-    
-    display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
-    grid-template-rows: 1.5fr 1.5fr 1.5fr;
-    gap: 30px 40px;
-    grid-auto-flow: column dense;
-    justify-content: start;
-    align-content: space-between;
-    justify-items: start;
-    align-items: start;
-    grid-template-areas:
-      ". . . ."
-      ". . . ."
-      ". . . .";
+  
+    width: 100%;
+    height: auto;
+
+      
   }
   
+  .card {
+      width: 250px;
+      height: 350px;
+      background-color: #fff;
+      border-radius: 14px;
+  }
