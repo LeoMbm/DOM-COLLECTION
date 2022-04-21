@@ -1,26 +1,3 @@
-const body = document.body
-
-document.body.style.backgroundColor = '#1267F0';
-
-
-//Je crée ma première div qui est mon container et qui sera dans ma section
-
-//Je crée ma seconde div qui est dans mon container 
-
-
-//Je crée ma troisième div qui est dans ma div card
-
-
-// Quatrième div qui est aussi dans ma div card
-
-
-// Ici je vai
-
-
-
-
-
-
 
 let collection = [{
     
@@ -33,8 +10,9 @@ let collection = [{
         language: 'FR',
         producer: 'LVDR',
         type: 'Music',
-        picture : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Ninho_karlexander.jpg/640px-Ninho_karlexander.jpg'
-},
+        picture : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Ninho_karlexander.jpg/640px-Ninho_karlexander.jpg',
+        link : "https://youtu.be/vhYedzqhyRg?list=RDMMvhYedzqhyRg"
+    },
 
 
                 {
@@ -47,7 +25,8 @@ let collection = [{
         language: 'EN',
         producer: 'Halfway, Michael Seven & Snapz',
         type: 'Music',
-        picture : 'https://media.resources.festicket.com/www/artists/cousin-stizz.jpg'
+        picture : 'https://media.resources.festicket.com/www/artists/cousin-stizz.jpg',
+        link: 'https://www.youtube.com/watch?v=TVG1ALcGf7Y'
         
         
 
@@ -62,8 +41,8 @@ let collection = [{
     language: 'EN',
     producer: 'Baby Plugg, BabyPluto, Beatsbyjuko & Comethazine',
     type: 'Music',
-    picture : 'https://www.inkedmag.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTc2NDAyNTkwNDk2NDY2MDkz/comethazine.jpg'
-
+    picture : 'https://www.inkedmag.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTc2NDAyNTkwNDk2NDY2MDkz/comethazine.jpg',
+    link: 'https://www.youtube.com/watch?v=1z2MKRJtQuE'
 
 
 },
@@ -76,8 +55,8 @@ let collection = [{
     genre: 'Horror/Thriller',
     language: 'EN',
     type: 'Movie',
-    picture : 'https://fr.web.img6.acsta.net/pictures/21/09/30/15/42/4585289.jpg'
-
+    picture : 'https://fr.web.img6.acsta.net/pictures/21/09/30/15/42/4585289.jpg',
+    link: 'https://www.youtube.com/watch?v=VlXnNyaZpCE'
 
 
 },
@@ -90,8 +69,8 @@ let collection = [{
     genre: 'Action/Thriller',
     language: 'EN',
     type: 'Movie',
-    picture : 'https://imgsrc.cineserie.com/2016/08/14090.jpg?ver=1'
-    
+    picture : 'https://imgsrc.cineserie.com/2016/08/14090.jpg?ver=1',
+    link: 'https://www.youtube.com/watch?v=Ydmk1_1_Gi4'
 
 
 
@@ -107,8 +86,8 @@ let collection = [{
     genre: 'Psycho/Thriller',
     language: 'EN',
     type: 'Movie',
-    picture : 'https://fr.web.img4.acsta.net/medias/nmedia/18/69/96/84/19151192.jpg'
-
+    picture : 'https://fr.web.img4.acsta.net/medias/nmedia/18/69/96/84/19151192.jpg',
+    link: 'https://www.youtube.com/watch?v=5iaYLCiq5RM'
 
 
 },
@@ -121,8 +100,8 @@ let collection = [{
     genre: 'Action/Thriller',
     language: 'EN',
     type: 'Series',
-    picture : 'https://fr.web.img3.acsta.net/pictures/21/07/21/20/12/1875608.jpg'
-
+    picture : 'https://fr.web.img3.acsta.net/pictures/21/07/21/20/12/1875608.jpg',
+    link: 'https://www.youtube.com/watch?v=1Hk9SC3FnJ0'
 
 
 },
@@ -135,8 +114,8 @@ let collection = [{
     genre: 'Action/Thriller',
     language: 'EN',
     type: 'Series',
-    picture : 'https://fr.web.img6.acsta.net/pictures/22/03/18/08/49/3762635.jpg'
-
+    picture : 'https://fr.web.img6.acsta.net/pictures/22/03/18/08/49/3762635.jpg',
+    link: 'https://www.youtube.com/watch?v=M1UGGZnHyf8'
 
 
 },
@@ -149,8 +128,8 @@ let collection = [{
     genre: 'Horror/Thriller',
     language: 'EN',
     type: 'Series',
-    picture : 'https://fr.web.img6.acsta.net/pictures/16/02/23/15/43/145751.jpg'
-
+    picture : 'https://fr.web.img6.acsta.net/pictures/16/02/23/15/43/145751.jpg',
+    link: 'https://www.youtube.com/watch?v=PFq2138x0Zs'
 
 
 },
@@ -163,8 +142,8 @@ let collection = [{
     genre: 'FPS',
     language: 'EN',
     type: 'Game',
-    picture : 'https://www.dexerto.fr/wp-content/uploads/sites/2/2022/02/11/saison-2-warzone-changements-majeurs.jpg'
-
+    picture : 'https://www.dexerto.fr/wp-content/uploads/sites/2/2022/02/11/saison-2-warzone-changements-majeurs.jpg',
+    link: 'https://www.youtube.com/watch?v=ljLBEbAKkvE'
 
 
 },
@@ -172,67 +151,90 @@ let collection = [{
 
 ]
 
+const body = document.body
+
+document.body.style.backgroundColor = '#1267F0';
+
 const section = document.querySelector('#home');
 const container = document.createElement('div'); 
 container.className = 'container'
 
-for (const item of collection){
+
+function item() {
+    for (const item of collection){
     
 
 
 
-    const card = document.createElement('div');
-    card.className = 'card'
+        const card = document.createElement('div');
+        card.className = 'card'
+    
+    
+        const card_preview = document.createElement('div');
+        card_preview.className = 'card-preview'
+        const pic =  document.createElement('img')
+        pic.className = 'iframe'
+        pic.src = item.picture
+        const release = document.createElement('figcaption');
+        release.innerText = item.year
+        const type = document.createElement('p')
+        type.className = 'type'
+        type.innerText = item.type
+        const language = document.createElement('p')
+        language.className = 'language'
+        language.innerText = item.language
+        
+        
+        const card_info = document.createElement('div');
+        card_info.className = 'card-info'
+        const artist = document.createElement('h1')
+        artist.innerText = item.author;
+        const title = document.createElement('h2')
+        title.innerText = item.title;
+    
+    
+        const genre = document.createElement('p')
+        genre.className ='Genre'
+        genre.innerText = item.genre
 
 
-    const card_preview = document.createElement('div');
-    card_preview.className = 'card-preview'
-    const pic =  document.createElement('img')
-    pic.className = 'iframe'
-    pic.src = item.picture
-    const release = document.createElement('figcaption');
-    release.innerText = item.year
-    const type = document.createElement('p')
-    type.className = 'type'
-    type.innerText = item.type
-    const language = document.createElement('p')
-    language.className = 'language'
-    language.innerText = item.language
-    
-    
-    const card_info = document.createElement('div');
-    card_info.className = 'card-info'
-    const artist = document.createElement('h1')
-    artist.innerText = item.author;
-    const title = document.createElement('h2')
-    title.innerText = item.title;
+        const button = document.createElement('a')
+        button.href = item.link
+        button.className = 'btn'
 
+        const link = document.createTextNode('Trailer Here')
 
-    const genre = document.createElement('p')
-    genre.className ='Genre'
-    genre.innerText = item.genre
+        const i = document.createElement('i');
+        i.className ='fa-brands fa-youtube'
 
+        card_info.appendChild(button)
+
+        
     
-    
-    
-    
-    console.log(item)
-    
-    
-    
-    
-    
-    section.appendChild(container);
-    container.appendChild(card)
-    card.appendChild(card_preview)
-    card.appendChild(card_info)
-    card_preview.appendChild(pic)
-    card_preview.appendChild(release)
-    card_info.appendChild(language)
-    card_info.appendChild(type)
-    card_info.appendChild(artist);
-    card_info.appendChild(title);
-    card_info.appendChild(genre)
+        
+        
+        
+        
+        console.log(item)
+        
+        
+        
+        
+        
+        section.appendChild(container);
+        container.appendChild(card)
+        card.appendChild(card_preview)
+        card.appendChild(card_info)
+        card_preview.appendChild(pic)
+        card_preview.appendChild(release)
+        card_info.appendChild(language)
+        card_info.appendChild(type)
+        card_info.appendChild(artist);
+        card_info.appendChild(title);
+        card_info.appendChild(genre)
+        button.appendChild(i)
+        button.appendChild(link)
+    }
 }
 
 
@@ -241,16 +243,9 @@ for (const item of collection){
 
 
 
+item();
 
-function test(){
 
-
-// Creer un element et ecrire dedans
-const div = document.createElement('div');
-div.innerText = "Hello World"
-body.append('div');
-//
-}
 
 
 
@@ -260,6 +255,8 @@ body.append('div');
 
 // const preview = document.getElementById('card-preview');
 // document.preview.style.backgroundColor = '#A36E00';
+
+
 
 
 

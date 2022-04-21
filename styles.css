@@ -85,12 +85,14 @@ background: linear-gradient(173deg, rgba(65,166,60,0.5) 0%, rgba(166,144,147,0.5
    
     display : block;
     text-align: center;
+    margin-top: 10px;
   }
 
   .card-info h1{
 
     color: #fff;
     font-size: 18px;
+    margin-top: -10px;
    
   }
 
@@ -98,11 +100,19 @@ background: linear-gradient(173deg, rgba(65,166,60,0.5) 0%, rgba(166,144,147,0.5
 
     margin-top: -20px;
     font-size: 13px;
+    margin-bottom: -12px;
+  }
+
+  .language{
+
+
+
   }
 
  .type{
 
   text-decoration: underline #1267F0;
+  margin-top: -20px;
  }
 
 
@@ -112,17 +122,33 @@ background: linear-gradient(173deg, rgba(65,166,60,0.5) 0%, rgba(166,144,147,0.5
 
  }
 
+.btn{
+
+  transition: background-color 0.5s ease;
+}
+ a{
+
+  text-decoration: none;
+
+  padding: 5px;
+  background-color: #e01717df;
+  color: #fff;
+  
+ }
+ i{
+
+  margin-right: 5px;
+  
+ }
+
   .card:hover{
 
     transform: scale(1.1);
   }
 
-  @media screen and (max-width: 1000px){
+  
+  .btn:hover{
 
-    .card{
-
-
-      display: block;
-    }
-    
+    transform: scale(1.1);
+    background-color: rgb(118, 12, 12);
   }
