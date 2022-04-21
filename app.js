@@ -148,6 +148,33 @@ let collection = [{
 
 },
 
+{
+
+    author: 'Rockstar Games',
+    title: 'Grand Theft Auto',
+    year: '2013',
+    genre: 'Action/Aventure',
+    language: 'EN',
+    type: 'Game',
+    picture : 'https://image.jeuxvideo.com/medias-sm/163129/1631287693-3806-jaquette-avant.jpg',
+    link: 'https://www.youtube.com/watch?v=rDhglaXbEYo'
+
+},
+
+{
+
+    author: 'Rockstar Games',
+    title: 'Red Dead Redemption II',
+    year: '2018',
+    genre: 'Action/Aventure',
+    language: 'EN',
+    type: 'Game',
+    picture : 'https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png',
+    link: 'https://www.youtube.com/watch?v=eaW0tYpxyp0'
+
+}
+
+
 
 ]
 
