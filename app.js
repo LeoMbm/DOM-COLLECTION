@@ -195,6 +195,9 @@ for (const item of collection){
     const type = document.createElement('p')
     type.className = 'type'
     type.innerText = item.type
+    const language = document.createElement('p')
+    language.className = 'language'
+    language.innerText = item.language
     
     
     const card_info = document.createElement('div');
@@ -225,6 +228,7 @@ for (const item of collection){
     card.appendChild(card_info)
     card_preview.appendChild(pic)
     card_preview.appendChild(release)
+    card_info.appendChild(language)
     card_info.appendChild(type)
     card_info.appendChild(artist);
     card_info.appendChild(title);
