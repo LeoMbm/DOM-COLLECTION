@@ -9,8 +9,7 @@ The goal of this project will be to summarize our current knowledge of :
 - Javascript Basics
 - The DOM
 
-to create a collection of items.
-This project will be split up in two parts.
+
 
 ---
 
